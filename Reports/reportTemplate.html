@@ -1,0 +1,25 @@
+<template name="reportPage">
+	<div class="container">
+		<div class="jumbotron well text-center">
+			<h2>Welcome to the Reports page! <br>Here you will find all the information collected by the Student Activity Center.</h2>
+		</div>
+	</div>
+	<div class="container">
+		<ol>
+			{{#each records}}
+				<div class="row">
+					<li>
+						<h4>The student clicked the {{ button }} button on {{ createdAt }}.</h4>
+					</li>
+				</div>
+			{{/each}}
+		</ol>
+	</div>
+	<footer class="navbar navbar-default navbar-fixed-bottom well">
+		<div class="container text-center">
+			<button type="button" class="delete btn btn-default btn-lg">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Delete All
+					</button>
+		</div>
+	</footer>
+</template>

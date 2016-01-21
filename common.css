@@ -1,0 +1,33 @@
+#start{
+	top: 50%;
+	position: absolute;
+	transform: translateY(-200%);
+	left: 50%;
+	transform: translateX(-50%);
+}
+#left{
+	float: left;
+	left: 0;
+	width: 50%;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+#right{
+	float: right;
+	right: 0;
+	width: 50%;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+#buttonLeft{
+	width: 100%;
+}
+#buttonRight{
+	width: 100%;
+}

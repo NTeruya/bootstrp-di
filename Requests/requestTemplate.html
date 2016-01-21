@@ -1,0 +1,33 @@
+<template name="requestTemplate">
+	<div class="container">
+		<div class="jumbotron well">
+			<h3 class="text-center">Here you can request any changes or modification to the online software</h3>
+		</div>
+		<div class="row well">
+		<form class="new-request" role="form">
+  			<div class="form-group">
+    			<label for="reqtext"><h3>Enter Request::</h3></label>
+    			<textarea style="font-size: 24px;" class="form-control" rows="3" id="reqtext" name="reqtext"></textarea>
+  			</div>
+ 				<button type="submit" class="add-request btn btn-default pull-right"><h3>Submit</h3> </button>
+			</form>
+		</div>
+	</div>
+
+	<div class="container">
+		{{#each request}}
+			<div class="row well">
+			<div>
+				<div class="col-lg-12 ">
+					<h3>{{ reqtext }}</h3>
+				</div>
+					<button type="button" class="delete btn btn-default btn-lg pull-right">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Delete
+					</button>
+
+			</div>
+			</div>
+		{{/each}}
+	</div>
+	
+</template>
